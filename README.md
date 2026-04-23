@@ -6,8 +6,8 @@ Code release for landmark-level 24-hour mortality prediction in ICU patients wit
 
 ```text
 src/dynamic_ami_risk/      package code
-scripts/                   data generation, training, scoring
-data/                      public sample files
+scripts/                   training and scoring
+data/                      sample input
 model/                     model files
 tests/                     tests
 ```
@@ -20,16 +20,13 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-## Generate public sample files
+## Run on the sample file
 
 ```bash
-python scripts/generate_sample_data.py
-```
-
-## Train bundled model
-
-```bash
-python scripts/train_bundled_model.py
+python scripts/predict_from_csv.py ^
+  --input data/sample_landmark_features.csv ^
+  --output outputs/predictions.csv ^
+  --summary-json outputs/summary.json
 ```
 
 ## Train your own model
@@ -41,11 +38,11 @@ python scripts/train_from_private_csv.py ^
   --metadata-json model/model_metadata.json
 ```
 
-## Score a CSV
+## Score your own CSV
 
 ```bash
 python scripts/predict_from_csv.py ^
-  --input data/sample_landmark_features.csv ^
+  --input your_input.csv ^
   --output outputs/predictions.csv ^
   --summary-json outputs/summary.json
 ```
@@ -61,9 +58,3 @@ python scripts/predict_from_csv.py ^
 ```bash
 examples\run_sample.bat
 ```
-
-## Notes
-
-- Public files in `data/` are synthetic.
-- Restricted source data are not included.
-- The repository expects prepared landmark-level feature tables, not raw EHR tables.

@@ -44,15 +44,14 @@ The packaged code uses a default alert threshold of `0.10` unless overridden by 
 
 The published study design was based on a landmarking framework in ICU patients with AMI, with model development in eICU-CRD and external validation in MIMIC-IV.
 
-This public repository does not reproduce the full restricted-data training workflow. It focuses on model implementation, public synthetic sample files, and exported-model scoring.
+This public repository does not reproduce the full restricted-data training workflow. It focuses on model implementation and scoring.
 
 ## Limitations
 
 - Performance depends on correct feature engineering before scoring
 - Missing or improperly harmonized units may invalidate predictions
 - Predictions should be interpreted in the context of repeated landmark updates rather than as one-time admission risk
-- The included public sample files are synthetic and should not be treated as clinical evidence
-- The bundled LightGBM model file is trained on synthetic public data and is not the manuscript model
+- The bundled LightGBM model file is included for repository use and is not the manuscript model
 
 ## Governance Recommendation
 

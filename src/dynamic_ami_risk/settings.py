@@ -30,7 +30,7 @@ DEFAULT_BUNDLED_METADATA = {
     "version": "bundle-0.1.0",
     "alert_threshold": 0.10,
     "description": (
-        "Bundled LightGBM model trained on synthetic, clinically shaped landmark rows that ship with the public repository."
+        "Bundled LightGBM model file included with the public repository for package checks."
     ),
     "intended_use": (
         "Open-source package validation only. This is not the paper model."
