@@ -1,0 +1,8 @@
+{
+  "display_name": "Dynamic AMI 24-hour Mortality Model",
+  "short_name": "dynamic_ami_24h",
+  "version": "1.0.0",
+  "alert_threshold": 0.10,
+  "description": "Production LightGBM model for landmark-level AMI mortality prediction.",
+  "intended_use": "Research, benchmarking, and controlled deployment of the published model interface."
+}

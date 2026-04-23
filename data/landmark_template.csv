@@ -1,0 +1,2 @@
+patient_id,landmark_hours,age,sex,heart_rate_latest,map_latest,respiratory_rate_latest,spo2_latest,gcs_total_latest,urine_output_24h,lactate_latest,creatinine_latest,bun_latest,wbc_latest,hemoglobin_latest,platelet_latest,glucose_latest,mechanical_ventilation_current,vasoactive_support_current,renal_replacement_therapy_current,measurement_count_24h,hours_since_last_measurement
+EXAMPLE_001,6,70,male,92,71,20,96,15,1100,2.1,1.2,24,11.0,12.2,210,168,0,0,0,10,1.5
