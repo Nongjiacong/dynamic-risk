@@ -1,5 +1,7 @@
 # Dynamic AMI Risk Model Code
 
+![Clinical scenario, dynamic risk, and clinical implications](Fig1.png)
+
 Code release for landmark-level 24-hour mortality prediction in ICU patients with acute myocardial infarction.
 
 ## Structure
